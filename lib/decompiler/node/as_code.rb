@@ -1,6 +1,6 @@
 require 'internal/node'
-require 'internal/node/as_expression'
-require 'internal/object/as_code'
+require 'decompiler/node/as_expression'
+require 'decompiler/object/as_code'
 require 'rbconfig'
 
 class Node
