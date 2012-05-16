@@ -261,7 +261,7 @@ class TC_Methodsig < Test::Unit::TestCase
 end
 
 if __FILE__ == $0 then
-  require 'test_helpers'
-  run_all_tests()
+  # require 'test_helpers'
+  # run_all_tests()
 end
 

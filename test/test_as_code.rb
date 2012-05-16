@@ -239,23 +239,23 @@ class TC_As_Code < Test::Unit::TestCase
 end
 
 if __FILE__ == $0 then
-  require 'test/unit/ui/console/testrunner'
+  # require 'test/unit/ui/console/testrunner'
 
-  if Test::Unit.const_defined?(:AutoRunner) then
-    exit Test::Unit::AutoRunner.run
-  else
-    if ARGV.empty? then
-      suite = TC_As_Code.suite
-    else
-      suite = Test::Unit::TestSuite.new('TC_As_Code')
-      TC_As_Code.suite.tests.each do |test|
-        ARGV.each do |arg|
-          suite << test if /#{arg}/ =~ test.name
-        end
-      end
-    end
-    result = Test::Unit::UI::Console::TestRunner.run(suite)
-    exit(result.error_count + result.failure_count)
-  end
+  # if Test::Unit.const_defined?(:AutoRunner) then
+  #   exit Test::Unit::AutoRunner.run
+  # else
+  #   if ARGV.empty? then
+  #     suite = TC_As_Code.suite
+  #   else
+  #     suite = Test::Unit::TestSuite.new('TC_As_Code')
+  #     TC_As_Code.suite.tests.each do |test|
+  #       ARGV.each do |arg|
+  #         suite << test if /#{arg}/ =~ test.name
+  #       end
+  #     end
+  #   end
+  #   result = Test::Unit::UI::Console::TestRunner.run(suite)
+  #   exit(result.error_count + result.failure_count)
+  # end
 end
 
