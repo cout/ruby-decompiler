@@ -6,10 +6,10 @@ $:.unshift(dir) if not $:.include?(dir)
 $:.unshift("#{dir}/../lib") if not $:.include?("#{dir}/../lib")
 $:.unshift("#{dir}/../ext") if not $:.include?("#{dir}/../ext")
 
-require 'internal/node/as_code'
-require 'internal/method/as_code'
-require 'internal/module/as_code'
-require 'internal/proc/as_code'
+require 'decompiler/node/as_code'
+require 'decompiler/method/as_code'
+require 'decompiler/module/as_code'
+require 'decompiler/proc/as_code'
 
 require 'expression_samples'
 

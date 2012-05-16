@@ -6,9 +6,9 @@ $:.unshift(dir) if not $:.include?(dir)
 $:.unshift("#{dir}/../lib") if not $:.include?("#{dir}/../lib")
 $:.unshift("#{dir}/../ext") if not $:.include?("#{dir}/../ext")
 
-require 'internal/node/as_expression'
-require 'internal/method/as_expression'
-require 'internal/proc/as_expression'
+require 'decompiler/node/as_expression'
+require 'decompiler/method/as_expression'
+require 'decompiler/proc/as_expression'
 
 require 'expression_samples'
 
