@@ -10,6 +10,8 @@ Ruby-decompiler is a decompiler for ruby code.  Use it to deconstruct
 method signatures and decompile bytecode (1.9.x) or the AST (1.8.x).
   END_DESCRIPTION
 
+  s.add_dependency 'ruby-internal', '>= 0.8.4'
+
   patterns = [
     'lib/**/*.rb',
     'README.rdoc',
