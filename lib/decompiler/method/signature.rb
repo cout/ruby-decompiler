@@ -1,13 +1,14 @@
 require 'internal/method'
 require 'internal/node'
-require 'internal/node/as_expression'
-require 'internal/method/signature/argument'
-require 'internal/method/signature/node'
-require 'internal/method/signature/signature'
+
+require 'decompiler/node/as_expression'
+require 'decompiler/method/signature/argument'
+require 'decompiler/method/signature/node'
+require 'decompiler/method/signature/signature'
 
 if defined?(RubyVM) then
-require 'internal/vm/bytedecoder'
-require 'internal/method/signature/iseq'
+require 'decompiler/vm/bytedecoder'
+require 'decompiler/method/signature/iseq'
 end
 
 module MethodSig

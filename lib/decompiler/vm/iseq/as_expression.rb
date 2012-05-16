@@ -1,7 +1,7 @@
 require 'internal/vm'
 
 if defined?(RubyVM::InstructionSequence) then
-  require 'internal/vm/bytedecoder'
+  require 'decompiler/vm/bytedecoder'
 
   class RubyVM
     class InstructionSequence

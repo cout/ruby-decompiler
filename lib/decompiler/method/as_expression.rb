@@ -1,7 +1,8 @@
-require 'internal/node/as_expression'
-require 'internal/vm/iseq/as_expression'
-require 'internal/method/signature'
 require 'internal/method'
+
+require 'decompiler/node/as_expression'
+require 'decompiler/vm/iseq/as_expression'
+require 'decompiler/method/signature'
 
 module MethodAsExpression
   # Return a single-line string representation of a method

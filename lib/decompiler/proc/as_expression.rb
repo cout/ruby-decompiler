@@ -1,6 +1,7 @@
-require 'internal/node/as_expression'
-require 'internal/proc/signature'
 require 'internal/proc'
+
+require 'decompiler/node/as_expression'
+require 'decompiler/proc/signature'
 
 class Proc
   # Return a single-line string representation of a proc's

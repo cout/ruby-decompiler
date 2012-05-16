@@ -1,6 +1,7 @@
-require 'internal/node/as_code'
 require 'internal/proc'
-require 'internal/proc/signature'
+
+require 'decompiler/node/as_code'
+require 'decompiler/proc/signature'
 
 class Proc
   # Return a string representation of a proc's definition/body,
