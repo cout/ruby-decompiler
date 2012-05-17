@@ -393,9 +393,9 @@ class Node
     s
   end
 
-  major = Config::CONFIG['MAJOR'].to_i
-  minor = Config::CONFIG['MINOR'].to_i
-  teeny = Config::CONFIG['TEENY'].to_i
+  major = RbConfig::CONFIG['MAJOR'].to_i
+  minor = RbConfig::CONFIG['MINOR'].to_i
+  teeny = RbConfig::CONFIG['TEENY'].to_i
   ruby_version_code = major * 100 + minor * 10 + teeny
 
   if ruby_version_code >= 180 then
