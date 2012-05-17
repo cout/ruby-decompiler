@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name = 'ruby-decompiler'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.summary = 'A decompiler for ruby (both YARV and MRI)'
   s.homepage = 'http://github.com/cout/ruby-decompiler/'
   s.author = 'Paul Brannan'
